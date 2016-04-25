@@ -34,6 +34,9 @@
                     <p>Hello world! This is HTML5 Boilerplate.</p>
                 </div>
             </div>
+            <footer>
+                <div class="copyright">{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</div>
+            </footer>
         </div>
 
         <!--
