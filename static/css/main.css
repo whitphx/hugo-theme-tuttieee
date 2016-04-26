@@ -134,6 +134,10 @@ body {
     padding: 1rem 0;
 }
 
+article {
+    margin-bottom: 2rem;
+}
+
 footer {
     color: #fff;
     margin: 1rem 0;
