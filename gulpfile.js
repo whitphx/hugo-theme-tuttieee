@@ -6,6 +6,32 @@ var gulp = require("gulp"),
     gulpFilter = require('gulp-filter'),
     bower = require('main-bower-files');
 
+gulp.task('copy:bower:css', function() {
+  var f = filter('**/*.css', {restore: true})
+
+  return gulp.src(bower({
+    paths: {
+      bowerJson: 'bower.json'
+    }
+  }))
+    .pipe(f)
+    .pipe(gulp.dest('static/css/'))
+    .pipe(f.restore)
+})
+
+gulp.task('copy:bower:js', function() {
+  var f = filter('**/*.js', {restore: true})
+
+  return gulp.src(bower({
+    paths: {
+      bowerJson: 'bower.json'
+    }
+  }))
+    .pipe(f)
+    .pipe(gulp.dest('static/js/'))
+    .pipe(f.restore)
+})
+
 gulp.task('compile:lib', function() {
   var f = filter('**/*.js', {restore: true})
 
@@ -23,4 +49,5 @@ gulp.task('compile:lib', function() {
       extname: '.min.js'
     }))
     .pipe(gulp.dest('static/js/'))
+    .pipe(f.restore)
 })
