@@ -6,7 +6,7 @@
         <div id="container">
             <div id="eyecatch" class="container">
                 <div id="heading">
-                    {{ .Site.Params.Eyecatch }}
+                    {{ with .Site.Params.Eyecatch }}{{ . }}{{ else }}{{ .Site.Title}}{{ end }}
                 </div>
             </div>
             <div id="content-container">
