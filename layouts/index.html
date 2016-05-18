@@ -6,7 +6,11 @@
         <div id="container">
             <div id="eyecatch" class="container">
                 <div id="heading">
-                    {{ with .Site.Params.Eyecatch }}{{ . }}{{ else }}{{ .Site.Title}}{{ end }}
+                    {{ with .Site.Params.Eyecatch }}{{ . }}{{ end }}
+                </div>
+
+                <div id="social-link">
+                    {{ partial "socials.html" . }}
                 </div>
             </div>
             <div id="content-container">

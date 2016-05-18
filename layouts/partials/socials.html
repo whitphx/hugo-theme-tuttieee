@@ -1,0 +1,23 @@
+{{ with .Site.Params.github }}
+    <a id="contact-link-github" class="contact_link" href="https://github.com/{{ . }}">
+        <span>github</span>
+    </a>
+{{ end }}
+
+{{ with .Site.Params.linkedin }}
+    <a id="contact-link-linkedin" class="contact_link" href="https://www.linkedin.com/in/{{ . }}">
+        <span>linkedin</span>
+    </a>
+{{ end }}
+
+{{ with .Site.Params.fb }}
+    <a id="contact-link-fb" class="contact_link" href="https://www.facebook.com/{{ . }}">
+        <span>facebook</span>
+    </a>
+{{ end }}
+
+{{ with .Site.Params.twitter }}
+    <a id="contact-link-twitter" class="contact_link" href="https://twitter.com/{{ . }}">
+        <span>twitter</span>
+    </a>
+{{ end }}
