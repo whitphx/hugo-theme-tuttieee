@@ -1,26 +1,10 @@
 {{ partial "header.html" . }}
 
         <!-- Add your site or application content here -->
-        <div id="bg"></div>
-
-        <div id="container">
-            <div id="eyecatch" class="container">
-                <div id="heading">
-                    {{ with .Site.Params.Eyecatch }}{{ . }}{{ end }}
-                </div>
-
-                <div id="social-link">
-                    {{ partial "socials.html" . }}
-                </div>
-            </div>
             <div id="content-container">
                 <main role="main" class="container">
                     {{ partial "index.html" . }}
                 </main>
             </div>
-            <footer>
-                <div class="copyright">{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</div>
-            </footer>
-        </div>
 
 {{ partial "footer.html" . }}

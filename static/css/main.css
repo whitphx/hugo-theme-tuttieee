@@ -123,9 +123,13 @@ body {
 }
 
 #heading {
+    margin: 3rem 0 6rem;
+}
+
+#heading a {
     color: #fff;
     font-size: 5rem;
-    margin: 3rem 0 6rem;
+    text-decoration: none;
 }
 
 #content-container {
@@ -134,12 +138,24 @@ body {
     padding: 2rem 0;
 }
 
-#social-link {
+.heading-link {
     float: right;
+}
+
+.heading-link:not(last-child) {
+    margin-right: 1rem;
+}
+
+.entry-content {
+    margin-top: 2rem;
 }
 
 article {
     margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2em;
 }
 
 footer {
