@@ -32,11 +32,15 @@
                     {{ end }}
                 </div>
 
-                <div class="heading-link">
-                    {{ partial "socials.html" . }}
-                </div>
-
-                <div class="heading-link">
+                <div class="heading-links">
+                  <div class="heading-links-item" id="top-link">
+                    <a href="{{ $.Site.BaseURL }}">Top</a>
+                  </div>
+                  <div class="heading-links-item" id="post-link">
                     <a href="{{ $.Site.BaseURL }}/post">Blog</a>
+                  </div>
+                  <div class="heading-links-item" id="social-link">
+                    {{ partial "socials.html" . }}
+                  </div>
                 </div>
             </div>

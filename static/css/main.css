@@ -138,11 +138,15 @@ body {
     padding: 2rem 0;
 }
 
-.heading-link {
+.heading-links {
     float: right;
 }
 
-.heading-link:not(last-child) {
+.heading-links-item {
+    display: inline-block;
+}
+
+.heading-links-item:not(last-child) {
     margin-right: 1rem;
 }
 
