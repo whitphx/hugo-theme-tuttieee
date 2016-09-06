@@ -1,6 +1,5 @@
 {{ partial "header.html" . }}
 
-<div id="content-container">
 	<main role="main" class="container">
 		<h1 class="list-title">{{ .Title }}</h1>
 {{ range .Data.Pages }}
@@ -10,6 +9,5 @@
 		</article>
 {{ end }}
 	</main>
-</div>
 
 {{ partial "footer.html" . }}

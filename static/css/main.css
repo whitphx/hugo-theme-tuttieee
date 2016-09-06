@@ -106,33 +106,27 @@ body {
 }
 
 #bg {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #003050;
-    overflow: auto;
-}
-
-#container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #003050;
     overflow: auto;
+    z-index: -1;
 }
 
-#heading {
+.heading {
     margin: 3rem 0 6rem;
 }
 
-#heading a {
+.heading a {
     color: #fff;
     font-size: 5rem;
     text-decoration: none;
 }
 
-#content-container {
+.content-container {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem 0;

@@ -1,6 +1,5 @@
 {{ partial "header.html" . }}
 
-<div id="content-container">
 	<main role="main" class="container">
 		<article itemscope itemtype="http://schema.org/BlogPosting">
 			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
@@ -12,6 +11,5 @@
 
 		<a href="{{ $.Site.BaseURL }}/post">Back</a>
 	</main>
-</div>
 
 {{ partial "footer.html" . }}

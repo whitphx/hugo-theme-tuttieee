@@ -1,7 +1,9 @@
+            </div>
             <footer>
                 <div class="copyright">{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</div>
             </footer>
-        </div>
+
+        <div id="bg"></div>
 
         <!--
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

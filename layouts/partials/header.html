@@ -20,11 +20,9 @@
         {{`<!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->` | safeHTML}}
-        <div id="bg"></div>
 
-        <div id="container">
             <div id="eyecatch" class="container">
-                <div id="heading">
+                <div class="heading">
                     {{ with .Site.Params.Eyecatch }}
                       <a href="{{ $.Site.BaseURL }}">
                         {{ . }}
@@ -44,3 +42,4 @@
                   </div>
                 </div>
             </div>
+            <div class="content-container">
