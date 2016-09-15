@@ -34,9 +34,11 @@
                   <div class="heading-links-item" id="top-link">
                     <a href="{{ $.Site.BaseURL }}">Top</a>
                   </div>
+                  {{ if .Data.Pages }}
                   <div class="heading-links-item" id="post-link">
                     <a href="{{ $.Site.BaseURL }}post">Blog</a>
                   </div>
+                  {{ end }}
                   <div class="heading-links-item" id="social-link">
                     {{ partial "socials.html" . }}
                   </div>

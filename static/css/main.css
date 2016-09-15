@@ -163,7 +163,7 @@ footer {
     font-size: 1rem;
 }
 
-/* list */
+/* partial */
 .list-title {
     font-size: 3rem;
 }
@@ -173,8 +173,14 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.entry-meta {
-
+.entry-content h1 {
+    font-size: 2.3rem;
+}
+.entry-content h2 {
+    font-size: 2.1rem;
+}
+.entry-content h3 {
+    font-size: 1.9rem;
 }
 
 
