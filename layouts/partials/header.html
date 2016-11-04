@@ -34,7 +34,7 @@
                   <div class="heading-links-item" id="top-link">
                     <a href="{{ $.Site.BaseURL }}">Top</a>
                   </div>
-                  {{ if .Data.Pages }}
+                  {{ if where .Data.Pages "Section" "post" }}
                   <div class="heading-links-item" id="post-link">
                     <a href="{{ $.Site.BaseURL }}post">Blog</a>
                   </div>
